@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Drag and Drop</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Drag & Drop</h1>
+        <div id="container1" class="item-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="item1" class="item" src="images/image1.jpeg" draggable="true" ondragstart="drag(event)">
+            <img id="item2" class="item" src="images/image2.jpeg" draggable="true" ondragstart="drag(event)">
+            <img id="item3" class="item" src="images/image3.jpeg" draggable="true" ondragstart="drag(event)">
+        </div>
+
+        <div id="container2" class="item-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <button onclick="reset()" class="button">Reset</button>
+    <script src="index.js"></script>
+</body>
+
+</html>
